@@ -1,0 +1,39 @@
+/* たきびのサポートページ（GitHub Pages。リポジトリ takibi-privacy → https://y1693618-lang.github.io/takibi-privacy/）。アプリと同じ、あたたかい色 */
+:root {
+  --bg: #fbf6ef;
+  --card: #ffffff;
+  --text: #2b1d16;
+  --sub: #6b5446;
+  --accent: #b5532a;
+  --line: #eadfd3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1310;
+    --card: #241a15;
+    --text: #f6e9d9;
+    --sub: #cdb7a3;
+    --accent: #f0a06a;
+    --line: #3a2c24;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
+  line-height: 1.75;
+  font-size: 16px;
+}
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+h1 { font-size: 1.6rem; line-height: 1.4; margin: 0 0 4px; }
+h2 { font-size: 1.15rem; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+h3 { font-size: 1rem; margin: 20px 0 4px; }
+p, li { color: var(--text); }
+.sub { color: var(--sub); font-size: 0.9rem; }
+a { color: var(--accent); }
+.lang a { font-size: 0.9rem; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px 20px; margin: 16px 0; }
+footer { margin-top: 48px; color: var(--sub); font-size: 0.85rem; }
